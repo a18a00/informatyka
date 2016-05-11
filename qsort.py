@@ -1,7 +1,7 @@
 
 def qsort(tab,start,end):
     if end > start:
-        print 'before: ',tab
+        #print 'before: ',tab
         lmost = start
         rmost = end
         pivot = tab[end]
@@ -17,7 +17,7 @@ def qsort(tab,start,end):
                 rmost -= 1
             else:
                 done = True
-        print 'after:  ',tab
+        #print 'after:  ',tab
         qsort(tab,start,rmost)
         qsort(tab,lmost,end)
 
